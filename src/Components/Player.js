@@ -18,13 +18,15 @@ import {connect} from 'react-redux'
 import '../style/player.scss';
 
 // CREATING A RANDOM NUMBER BETWEEN 1 AND 6 
-const getRandomInteger = (min, max) =>
+export const getRandomInteger = (min, max) =>
                         Math.floor(Math.random() * (max - min + 1)) + min;
 
 class Player extends Component {
 
     constructor(props) {
         super(props);
+        // State that scores the player's CURRENT score
+        // the open state refers to dialog box open/close state (i.e if dailog box is open or closed)
         this.state = { 
             individualScore : 0,
             open : false
@@ -61,6 +63,7 @@ class Player extends Component {
         return (
             <div>
               {/* CARD OF AN INDIVIDUAL PLAYER */}
+              {/* Individual Player infomation are displayed here (i.e name, avatar, score and roll option) */}
               <Card class='playerCard'>
                   <CardContent>
                       <Typography>{this.props.name}</Typography>
@@ -99,8 +102,9 @@ class Player extends Component {
                   />
                 <DialogTitle className='winDialog-Title'>
                     {this.props.name} WINS !!!
-                </DialogTitle>
+                </DialogTitle> 
                 <DialogActions className='winDialog-Button' >
+                  {/* Button Clicked to Play Again */}
                   <Button onClick={
                                   () => {
                                     this.setState({open : false});
@@ -117,7 +121,7 @@ class Player extends Component {
     }
 }
 
-
+// Redux function to map the current state to the props
 function mapStateToProps(state) {
     return { 
       playerTurn : state.counter,
@@ -126,7 +130,7 @@ function mapStateToProps(state) {
     };
   }
 
-
+// props passed from parent to child
 Player.propTypes = {
     playerID: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

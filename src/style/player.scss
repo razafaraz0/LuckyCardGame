@@ -1,9 +1,3 @@
-// CardContent{
-//     max-width: 345;
-//     margin-bottom: 125vh;
-//     color: aqua;
-// }
-
 .playerCard{
     display: flex;
     flex-direction: column;
@@ -36,7 +30,6 @@
     background-color: transparent;
 
     &-Title{
-        // align-items: center;
         align-self: center;
     }
 

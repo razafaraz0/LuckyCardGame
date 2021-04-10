@@ -1,3 +1,4 @@
+// Tells us what the match ID is
 const matchIDReducer = (state = 0, action) => {
     switch(action.type){
         case 'SET_MATCHID':

@@ -1,13 +1,13 @@
-    import counterReducer from './counter';
-    import matchIDReducer from './matchID';
-    import gameStateReducer from './gameState';
-    import { combineReducers } from 'redux';
+// Allows is to group all the reducers in one place
+import counterReducer from './counter';
+import matchIDReducer from './matchID';
+import gameStateReducer from './gameState';
+import { combineReducers } from 'redux';
 
+const allReducers = combineReducers({
+    counter : counterReducer,
+    matchID : matchIDReducer,
+    isGameOver : gameStateReducer
+})
 
-    const allReducers = combineReducers({
-        counter : counterReducer,
-        matchID : matchIDReducer,
-        isGameOver : gameStateReducer
-    })
-
-    export default allReducers;
+export default allReducers;

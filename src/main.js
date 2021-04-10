@@ -58,7 +58,7 @@ class Main extends Component{
                             playerIndex={index}
                             totalPlayerCount={this.state.numberOfPlayers} 
                             scoreTowin={this.state.scoreToWin}
-                    />)}             
+                        />)}             
                 </div>
             </div>
         );
