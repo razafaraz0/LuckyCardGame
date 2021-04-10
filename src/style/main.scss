@@ -1,0 +1,24 @@
+.game{
+    display: flex;
+    flex-direction: column;
+
+    p{
+        margin-right: 5vh;
+        text-align: end;
+    }
+    &-title{
+        align-self: center;
+        
+    }
+
+    &-scoreToWin{
+        align-self: center;
+        margin-bottom: 10vh;
+    }
+}
+
+.allPlayerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 

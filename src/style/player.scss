@@ -1,0 +1,54 @@
+// CardContent{
+//     max-width: 345;
+//     margin-bottom: 125vh;
+//     color: aqua;
+// }
+
+.playerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vh;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin: 5vh;
+
+    img{
+        max-width: 25vh;
+        max-height: 25vh;
+        border-radius: 50%;
+    }
+
+    &-Avatar{
+        max-width: 25vh;
+        max-height: 25vh;
+        border-radius: 50%; 
+    }
+
+    &-RollButton{
+
+        width: 50px;
+    }
+
+}
+
+
+.winDialog{
+    background-color: transparent;
+
+    &-Title{
+        // align-items: center;
+        align-self: center;
+    }
+
+    &-Avatar{
+        max-width: 25vh;
+        max-height: 25vh;
+        border-radius: 50%; 
+        align-self: center;
+    }
+
+    &-Button{
+        align-self: center;
+    }
+
+}
