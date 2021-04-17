@@ -1,5 +1,9 @@
 # BABBEL Coding Challenge
 
+## PREVIEW
+
+![](sample.gif)
+
 ## Purpose
 
 The purpose of this assignment was to build a local game where players compete by rolling dice in turn. The first Player to reach the designated score wins.
@@ -49,6 +53,3 @@ This will look at the *.test file  and run it.
 
 
 
-## PREVIEW
-
-![](sample.gif)
