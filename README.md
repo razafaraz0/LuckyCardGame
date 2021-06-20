@@ -1,4 +1,4 @@
-# BABBEL Coding Challenge
+# Lucky Card Game
 
 ## PREVIEW
 
